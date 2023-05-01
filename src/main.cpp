@@ -1,21 +1,13 @@
 #include <SFML/Graphics.hpp>
+#include <iostream>
+#include "CoreContext.h"
+#include "GameScene.h"
 
 int main()
 {
-    auto window = sf::RenderWindow{ { 1920u, 1080u }, "CMake SFML Project" };
-    window.setFramerateLimit(144);
-
-    while (window.isOpen())
-    {
-        for (auto event = sf::Event{}; window.pollEvent(event);)
-        {
-            if (event.type == sf::Event::Closed)
-            {
-                window.close();
-            }
-        }
-
-        window.clear();
-        window.display();
-    }
+    CoreContext ctx{};
+    std::cout << "CREATING CORE CONTEXT";
+    ctx.enterScene(new GameScene());
+    std::cout << "\nENTERING GAME SCENE";
+    ctx.run();
 }
