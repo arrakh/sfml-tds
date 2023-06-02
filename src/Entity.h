@@ -9,6 +9,7 @@
 class Entity {
 public:
     Entity();
+    Entity(const sf::Vector2f position);
     virtual ~Entity();
 
     virtual void update() = 0;

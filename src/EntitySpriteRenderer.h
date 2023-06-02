@@ -9,12 +9,12 @@
 
 class EntitySpriteRenderer {
 public:
-    EntitySpriteRenderer(Entity* target, sf::Vector2f size);
+    EntitySpriteRenderer(Entity* target, sf::Vector2f& size);
     void render(sf::RenderTarget* renderTarget);
     void setColor(sf::Color color);
 
 private:
-    sf::Vector2f rectSize;
+    sf::Vector2f &rectSize;
     Entity* targetEntity;
     sf::RectangleShape rect;
 };

@@ -11,3 +11,7 @@ Entity::Entity() {
 Entity::~Entity() {
 
 }
+
+Entity::Entity(const sf::Vector2f position) : position(position) {
+
+}

@@ -3,6 +3,7 @@
 //
 
 #include "CoreContext.h"
+#include "SimplePhysics2D.h"
 
 float CoreContext::dt = 0.0f;
 
@@ -34,6 +35,8 @@ void CoreContext::update()
     updateDeltaTime();
 
     updateSFMLEvents();
+
+    SimplePhysics2D::physicsUpdate();
 
     sceneStack.top()->update();
 }

@@ -8,13 +8,18 @@
 
 void GameScene::update() {
     player.update();
+    obstacleTest.update();
     camera.update(&worldView);
 }
 
 void GameScene::render(sf::RenderTarget *renderTarget) {
+    //world render
     renderTarget->setView(worldView);
     renderTarget->draw(ground);
     player.render(renderTarget);
+    obstacleTest.render(renderTarget);
+
+    //view render
     renderTarget->setView(renderTarget->getDefaultView());
 }
 

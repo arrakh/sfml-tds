@@ -112,6 +112,27 @@ build CMakeFiles/CMakeSFMLProject.dir/src/VectorMath.cpp.obj: CXX_COMPILER__CMak
   OBJECT_DIR = CMakeFiles\CMakeSFMLProject.dir
   OBJECT_FILE_DIR = CMakeFiles\CMakeSFMLProject.dir\src
 
+build CMakeFiles/CMakeSFMLProject.dir/src/SimplePhysics2D.cpp.obj: CXX_COMPILER__CMakeSFMLProject_Debug E$:/Projectss/sfml-tds/src/SimplePhysics2D.cpp || cmake_object_order_depends_target_CMakeSFMLProject
+  DEP_FILE = CMakeFiles\CMakeSFMLProject.dir\src\SimplePhysics2D.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -IE:/Projectss/sfml-tds/cmake-build-debug/_deps/sfml-src/include
+  OBJECT_DIR = CMakeFiles\CMakeSFMLProject.dir
+  OBJECT_FILE_DIR = CMakeFiles\CMakeSFMLProject.dir\src
+
+build CMakeFiles/CMakeSFMLProject.dir/src/RectEntityCollider.cpp.obj: CXX_COMPILER__CMakeSFMLProject_Debug E$:/Projectss/sfml-tds/src/RectEntityCollider.cpp || cmake_object_order_depends_target_CMakeSFMLProject
+  DEP_FILE = CMakeFiles\CMakeSFMLProject.dir\src\RectEntityCollider.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -IE:/Projectss/sfml-tds/cmake-build-debug/_deps/sfml-src/include
+  OBJECT_DIR = CMakeFiles\CMakeSFMLProject.dir
+  OBJECT_FILE_DIR = CMakeFiles\CMakeSFMLProject.dir\src
+
+build CMakeFiles/CMakeSFMLProject.dir/src/ObstacleEntity.cpp.obj: CXX_COMPILER__CMakeSFMLProject_Debug E$:/Projectss/sfml-tds/src/ObstacleEntity.cpp || cmake_object_order_depends_target_CMakeSFMLProject
+  DEP_FILE = CMakeFiles\CMakeSFMLProject.dir\src\ObstacleEntity.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -IE:/Projectss/sfml-tds/cmake-build-debug/_deps/sfml-src/include
+  OBJECT_DIR = CMakeFiles\CMakeSFMLProject.dir
+  OBJECT_FILE_DIR = CMakeFiles\CMakeSFMLProject.dir\src
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target CMakeSFMLProject
@@ -120,7 +141,7 @@ build CMakeFiles/CMakeSFMLProject.dir/src/VectorMath.cpp.obj: CXX_COMPILER__CMak
 #############################################
 # Link the executable CMakeSFMLProject.exe
 
-build CMakeSFMLProject.exe: CXX_EXECUTABLE_LINKER__CMakeSFMLProject_Debug CMakeFiles/CMakeSFMLProject.dir/src/main.cpp.obj CMakeFiles/CMakeSFMLProject.dir/src/CoreContext.cpp.obj CMakeFiles/CMakeSFMLProject.dir/src/Scene.cpp.obj CMakeFiles/CMakeSFMLProject.dir/src/Entity.cpp.obj CMakeFiles/CMakeSFMLProject.dir/src/PlayerEntity.cpp.obj CMakeFiles/CMakeSFMLProject.dir/src/GameScene.cpp.obj CMakeFiles/CMakeSFMLProject.dir/src/Camera.cpp.obj CMakeFiles/CMakeSFMLProject.dir/src/EntitySpriteRenderer.cpp.obj CMakeFiles/CMakeSFMLProject.dir/src/VectorMath.cpp.obj | _deps/sfml-build/lib/libsfml-graphics-d.a _deps/sfml-build/lib/libsfml-window-d.a _deps/sfml-build/lib/libsfml-system-d.a || _deps/sfml-build/lib/sfml-graphics-d-2.dll _deps/sfml-build/lib/sfml-system-d-2.dll _deps/sfml-build/lib/sfml-window-d-2.dll
+build CMakeSFMLProject.exe: CXX_EXECUTABLE_LINKER__CMakeSFMLProject_Debug CMakeFiles/CMakeSFMLProject.dir/src/main.cpp.obj CMakeFiles/CMakeSFMLProject.dir/src/CoreContext.cpp.obj CMakeFiles/CMakeSFMLProject.dir/src/Scene.cpp.obj CMakeFiles/CMakeSFMLProject.dir/src/Entity.cpp.obj CMakeFiles/CMakeSFMLProject.dir/src/PlayerEntity.cpp.obj CMakeFiles/CMakeSFMLProject.dir/src/GameScene.cpp.obj CMakeFiles/CMakeSFMLProject.dir/src/Camera.cpp.obj CMakeFiles/CMakeSFMLProject.dir/src/EntitySpriteRenderer.cpp.obj CMakeFiles/CMakeSFMLProject.dir/src/VectorMath.cpp.obj CMakeFiles/CMakeSFMLProject.dir/src/SimplePhysics2D.cpp.obj CMakeFiles/CMakeSFMLProject.dir/src/RectEntityCollider.cpp.obj CMakeFiles/CMakeSFMLProject.dir/src/ObstacleEntity.cpp.obj | _deps/sfml-build/lib/libsfml-graphics-d.a _deps/sfml-build/lib/libsfml-window-d.a _deps/sfml-build/lib/libsfml-system-d.a || _deps/sfml-build/lib/sfml-graphics-d-2.dll _deps/sfml-build/lib/sfml-system-d-2.dll _deps/sfml-build/lib/sfml-window-d-2.dll
   FLAGS = -g
   LINK_LIBRARIES = _deps/sfml-build/lib/libsfml-graphics-d.a  _deps/sfml-build/lib/libsfml-window-d.a  _deps/sfml-build/lib/libsfml-system-d.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\CMakeSFMLProject.dir

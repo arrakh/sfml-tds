@@ -8,6 +8,7 @@
 #include "SFML/Graphics.hpp"
 #include "Entity.h"
 #include "EntitySpriteRenderer.h"
+#include "RectEntityCollider.h"
 
 
 class PlayerEntity : public Entity {
@@ -20,7 +21,11 @@ public:
     void render(sf::RenderTarget *renderTarget) override;
 
 private:
-    EntitySpriteRenderer spriteRenderer {this, scale * 30.0f};
+    EntitySpriteRenderer spriteRenderer {this, finalSize};
+    RectEntityCollider collider {position, finalSize};
+
+    sf::Vector2f size;
+    sf::Vector2f finalSize;
 };
 
 

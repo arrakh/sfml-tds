@@ -25,3 +25,7 @@ sf::Vector2f VectorMath::normalize(sf::Vector2f vector) {
     }
     return vector;
 }
+
+sf::Vector2f VectorMath::scalar(sf::Vector2f vector, sf::Vector2f scalar) {
+    return sf::Vector2f{vector.x * scalar.x, vector.y * scalar.y};
+}
